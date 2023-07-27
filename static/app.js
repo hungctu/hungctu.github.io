@@ -80,10 +80,7 @@ btn6.addEventListener("click", function(){
 // })
 tg.MainButton.onClick(() => {
         // With current repo's implementation it will be the same domain, but it can be customized
-        let usercard = document.getElementById("usercard");
-        let p = document.createElement("p");
-        p.innerText =  `abc xyz`;
-        usercard.appendChild(p)
+         tg.sendData(item);
     });
 
 let usercard = document.getElementById("usercard");
