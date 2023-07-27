@@ -75,9 +75,16 @@ btn6.addEventListener("click", function(){
     }
 })
 
-Telegram.WebApp.onEvent("mainButtonClicked",function(){
-    tg.sendData(item);
-})
+// Telegram.WebApp.onEvent("mainButtonClicked",function(){
+//     tg.sendData(item);
+// })
+tg.MainButton.onClick(() => {
+        // With current repo's implementation it will be the same domain, but it can be customized
+        let usercard = document.getElementById("usercard");
+        let p = document.createElement("p");
+        p.innerText =  `abc xyz`;
+        usercard.appendChild(p)
+    });
 
 let usercard = document.getElementById("usercard");
 let p = document.createElement("p");
