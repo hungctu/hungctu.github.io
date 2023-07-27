@@ -2,8 +2,8 @@ body{
     margin: 0;
     padding: 0;
     font-size: 18px;
-    color: var(--tg-theme-text-color);
-    background: var(--tg-theme-bg-color)
+    color: #FFFFFF;
+    background: #000080
 }
 .container{
     max-width: 390px;
@@ -26,7 +26,7 @@ body{
     display: inline-block;
     padding: 10px 20px;
     border: none;
-    background: rgb(248,168,24);
+    background: rgb(0, 0, 0);
     border-radius: 10px;
     color: #fff;
     text-transform: uppercase;
@@ -35,8 +35,9 @@ body{
     transition: background .2s linear;
 }
 .btn:hover{
-    background: lightgreen
+    background: rgb(245, 22, 22)
 }
+
 .usercard{
     text-align: center;
 }
