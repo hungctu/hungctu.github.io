@@ -76,10 +76,7 @@ btn6.addEventListener("click", function(){
 })
 
 Telegram.WebApp.onEvent("mainButtonClicked",function(){
-    let p = document.createElement("p");
-    p.innerText =  "abc xyz";
-    usercard.appendChild(p)
-    //tg.sendData(item);
+    tg.sendData(item);
 })
 
 let usercard = document.getElementById("usercard");
