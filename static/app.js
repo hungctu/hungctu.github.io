@@ -5,8 +5,6 @@ tg.expand();
 tg.MainButton.textColor = "#FFFFFF";
 tg.MainButton.color = "#FF0000"
 
-let item="";
-
 let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
 let btn3 = document.getElementById("btn3");
@@ -19,7 +17,7 @@ btn1.addEventListener("click", function(){
         tg.MainButton.hide();
     }
     else{
-        tg.MainButton.setText("You add Charizard");
+        tg.MainButton.setText("You add Donut");
         item = "1";
         tg.MainButton.show();
     }
@@ -29,7 +27,7 @@ btn2.addEventListener("click", function(){
         tg.MainButton.hide();
     }
     else{
-        tg.MainButton.setText("You add Garchomp");
+        tg.MainButton.setText("You add Fries");
         item = "2";
         tg.MainButton.show();
     }
@@ -39,7 +37,7 @@ btn3.addEventListener("click", function(){
         tg.MainButton.hide();
     }
     else{
-        tg.MainButton.setText("You add Gengar");
+        tg.MainButton.setText("You add Hambuger");
         item = "3";
         tg.MainButton.show();
     }
@@ -49,7 +47,7 @@ btn4.addEventListener("click", function(){
         tg.MainButton.hide();
     }
     else{
-        tg.MainButton.setText("You add Gradevoir");
+        tg.MainButton.setText("You add Hotdog");
         item = "4";
         tg.MainButton.show();
     }
@@ -59,7 +57,7 @@ btn5.addEventListener("click", function(){
         tg.MainButton.hide();
     }
     else{
-        tg.MainButton.setText("You add Lucario");
+        tg.MainButton.setText("You add IceCream");
         item = "5";
         tg.MainButton.show();
     }
@@ -69,7 +67,7 @@ btn6.addEventListener("click", function(){
         tg.MainButton.hide();
     }
     else{
-        tg.MainButton.setText("You add Mewtwo");
+        tg.MainButton.setText("You add Pizza");
         item = "6";
         tg.MainButton.show();
     }
@@ -78,13 +76,9 @@ btn6.addEventListener("click", function(){
 Telegram.WebApp.onEvent("mainButtonClicked",function(){
     tg.sendData(item);
 })
-// tg.MainButton.onClick(() => {
-//         // With current repo's implementation it will be the same domain, but it can be customized
-//          tg.sendData(item);
-//     });
 
 let usercard = document.getElementById("usercard");
 let p = document.createElement("p");
-p.innerText =  `${window.Telegram.WebApp.initDataUnsafe.user.first_name}
-${window.Telegram.WebApp.initDataUnsafe.user.last_name}`;
+p.innerText =  `${tg.initDataUnsafe.first_name}
+${tg.initDataUnsafe.last_name}`;
 usercard.appendChild(p)
